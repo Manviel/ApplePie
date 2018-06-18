@@ -1,4 +1,6 @@
-# Sing
+# Apple pie
+## The most advanced and modern CSS course
+### Responsive design
 
 mma.cc.ua - мой сайт<br>
-universe - страница мероприятия GitHub Universe
+natours - advanced CSS and Sass
