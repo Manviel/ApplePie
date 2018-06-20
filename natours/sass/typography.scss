@@ -39,6 +39,8 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+  
+  -webkit-background-clip: text;
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -55,7 +57,5 @@ body {
 .parag {
   font-size: $defs-font;
 
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+  &:not(:last-child) { margin-bottom: 3rem; }
 }
