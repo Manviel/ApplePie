@@ -45,6 +45,13 @@
 
     &::after { background-color: $white; }
   }
+
+  &--green {
+    background-color: $medium;
+    color: $white;
+
+    &::after { background-color: $medium; }
+  }
 }
 
 .btn-text {
