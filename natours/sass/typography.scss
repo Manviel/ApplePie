@@ -45,3 +45,17 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
   }
 }
+
+.head-tertiary {
+  font-size: $defs-font;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.parag {
+  font-size: $defs-font;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

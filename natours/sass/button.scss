@@ -4,7 +4,7 @@
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: $defs-font;
     padding: 1.5rem 4rem;
     border-radius: 10rem;
     transition: all 0.2s;
@@ -44,5 +44,30 @@
     color: $grey;
 
     &::after { background-color: $white; }
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $defs-font;
+    color: $medium;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $medium;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $medium;
+    color: $white;
+    box-shadow: 0 1rem 2rem rgba($black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+    transform: translateY(0);
   }
 }
