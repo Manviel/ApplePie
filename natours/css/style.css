@@ -281,7 +281,7 @@ body {
   animation-fill-mode: backwards; }
 
 .section-about {
-  background-color: #f7f7f7f7;
+  background-color: "unquote('#f7f7f7f7')";
   padding: 25rem 0;
   margin-top: -20vh; }
 
@@ -295,7 +295,7 @@ body {
     transform: skewY(4deg); }
 
 .section-tours {
-  background-color: #f7f7f7f7;
+  background-color: "unquote('#f7f7f7f7')";
   padding: 25rem 0 50rem 0;
   margin-top: -10rem; }
 
