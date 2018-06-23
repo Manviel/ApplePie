@@ -4,6 +4,14 @@
   box-sizing: inherit;
 }
 
-html { font-size: 62.5%; }
+html {
+  font-size: 62.5%;
+
+  @include respond(phone) { font-size: 50%; }
+
+  @include respond(tablet) { font-size: 60%; }
+
+  @include respond(desktop) { font-size: 80%; }
+}
 
 body { box-sizing: border-box; }
