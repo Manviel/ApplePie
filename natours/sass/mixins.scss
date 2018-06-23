@@ -15,14 +15,14 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 600px) { @content };
+    @media (max-width: 37.5em) { @content };
   }
 
   @if $breakpoint == tablet {
-    @media (max-width: 900px) { @content };
+    @media (max-width: 56.25em) { @content };
   }
 
   @if $breakpoint == desktop {
-    @media (max-width: 1600px) { @content };
+    @media (min-width: 100em) { @content };
   }
 }
