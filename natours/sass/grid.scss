@@ -10,7 +10,10 @@
 
   @include clearfix;
 
-  @include respond(tablet) { max-width: 50rem; }
+  @include respond(tablet) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
 
   [class^="col-"] {
     float: left;
