@@ -2,14 +2,29 @@
   max-width: $grid-width;
   margin: 0 auto;
   
-  &:not(:last-child) { margin-bottom: $vertical; }
+  &:not(:last-child) {
+    margin-bottom: $vertical;
+
+    @include respond(tablet) { margin-bottom: $gutter; }
+  }
 
   @include clearfix;
+
+  @include respond(tablet) { max-width: 50rem; }
 
   [class^="col-"] {
     float: left;
 
-    &:not(:last-child) { margin-right: $horizontal; }
+    &:not(:last-child) {
+      margin-right: $horizontal;
+
+      @include respond(tablet) {
+        margin-right: 0;
+        margin-bottom: $gutter;
+      }
+    }
+
+    @include respond(tablet) { width: 100% !important; }
   }
 
   .col-1-of-2 { width: calc((100% - #{$horizontal}) / 2); }
