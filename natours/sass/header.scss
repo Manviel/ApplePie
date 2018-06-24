@@ -4,7 +4,7 @@
     to right bottom,
     rgba($light, 0.8),
     rgba($dark, 0.8)),
-  url(../img/hero.jpg);
+  url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -13,6 +13,10 @@
   @include respond(tablet) { clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 95%); }
 
   @include respond(phone) { clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120em) {
+    background-image: linear-gradient(to right bottom, rgba($light, 0.8), rgba($dark, 0.8)), url(../img/hero.jpg);
+  }
 
   &__logo-box {
     position: absolute;
