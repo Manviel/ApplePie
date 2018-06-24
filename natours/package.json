@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass sass/main.scss css/style.css -w",
-    "server": "live-server"
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "server": "live-server",
+    "start": "npm-run-all --parallel server watch",
+    
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "compress": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile compress"
   },
   "author": "Mike",
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3"
   }
 }
