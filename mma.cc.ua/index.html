@@ -5,69 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>My website</title>
 </head>
 
 <body>
-  <main class="card">
-    <header class="flex header">
-      <img src="./img/avatar.jpg" alt="profile" class="profile" />
-      <div class="flex info">
-        <h1 class="head">Merezhko Michael</h1>
-        <span class="locate gray">Kharkiv</span>
+  <div class="card">
+    <article class="flex col content">
+      <div class="box">
+        <img src="./img/avatar.jpg" alt="avatar" class="rad" />
       </div>
-    </header>
+      <h1 class="prime">Merezhko Michael</h1>
+      <span class="gray">Kharkiv</span>
 
-    <section class="flex stats">
-      <div class="flex">
-        <div class="flex hub">
-          <p class="bold" id="follow"></p>
-          <span>following</span>
-        </div>
-        <div class="flex hub">
-          <p class="bold" id="repos"></p>
-          <span>repositories</span>
-        </div>
-      </div>
-      <div class="margin">
+      <main class="flex box center">
         <a href="https://github.com/Manviel" class="button">FOLLOW</a>
-      </div>
-    </section>
+      </main>
 
-    <section class="bio">
-      <span class="gray">Student | Frontend developer in the future | Like video games and news about gadgets and technologies</span>
-      <span class="gray">Phone: +38 (063) 4901154</span>
-      <span class="gray">Email: mmieriezhko@gmail.com</span>
-    </section>
-  </main>
+      <section class="flex box space">
+        <div class="flex col">
+          <p class="bold" id="follow"></p>
+          <span class="hub">following</span>
+        </div>
+        <div class="flex col">
+          <p class="bold" id="repos"></p>
+          <span class="hub">repositories</span>
+        </div>
+      </section>
 
-  <footer class="grid">
-    <div class="peach flex center">
-      <h2>Nice Guy</h2>
-      <a href="https://www.facebook.com/mmieriezhko">
-        <img src="./img/face.png" alt="facebook" class="icon">
-      </a>
-    </div>
-    <div class="black flex center">
-      <h2>Absolute Madman</h2>
-      <a href="https://twitter.com/mmieriezhko">
-        <img src="./img/twitter.png" alt="twitter" class="icon">
-      </a>
-    </div>
-    <div class="fall flex center">
-      <h2>Respect Women</h2>
-      <a href="https://www.linkedin.com/in/michael-merezhko-293028140/">
-        <img src="./img/link.png" alt="linkedin" class="icon">
-      </a>
-    </div>
-    <div class="mount flex center">
-      <h2>Most Handsome</h2>
-      <a href="https://t.me/Manviel">
-        <img src="./img/telega.png" alt="telegram" class="icon">
-      </a>
-    </div>
-  </footer>
+      <footer class="flex box col">
+        <span class="gray">Student</span>
+        <span class="gray">Frontend developer in the future</span>
+        <span class="gray">Like video games and news about technologies</span>
+        <a href="mailto:mmieriezhko@gmail.com" class="gray">Email</span>
+      </footer>
+    </article>
+
+    <ul class="flex content center">
+      <li class="rad"></li>
+      <li class="rad"></li>
+      <li class="rad"></li>
+      <li class="rad"></li>
+    </ul>
+  </div>
 
   <script src="./js/script.js"></script>
 </body>

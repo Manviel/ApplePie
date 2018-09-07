@@ -8,6 +8,8 @@ function printUsers() {
 }
 
 const request = new XMLHttpRequest();
+
 request.onload = printUsers;
-request.open('get', 'https://api.github.com/users/Manviel', true)
+
+request.open('get', 'https://api.github.com/users/Manviel', true);
 request.send();
