@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Business card website" />
+    <meta name="Keywords" content="Manviel" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>My website</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>My website</title>
-</head>
-
-<body>
-  <div class="card">
-    <article class="flex col content">
-      <div class="box">
-        <img src="./img/avatar.jpg" alt="avatar" class="rad" />
-      </div>
-      <h1 class="prime">Merezhko Michael</h1>
-      <span class="gray">Kharkiv</span>
-
-      <main class="flex box center">
-        <a href="https://github.com/Manviel" class="button">FOLLOW</a>
-      </main>
-
-      <section class="flex box space">
-        <div class="flex col">
-          <p class="bold" id="follow"></p>
-          <span class="hub">following</span>
+  <body>
+    <div class="abs card">
+      <article class="flex col content">
+        <div class="box">
+          <img src="./img/avatar.jpg" alt="avatar" class="avatar" />
         </div>
-        <div class="flex col">
-          <p class="bold" id="repos"></p>
-          <span class="hub">repositories</span>
+        <div class="flex end">
+          <a
+            href="https://www.instagram.com/miannelst"
+            class="inst rad abs right bold"
+          >
+            Instagram
+          </a>
         </div>
-      </section>
+        <div class="flex end">
+          <a
+            href="mailto:mmieriezhko@gmail.com"
+            class="email rad abs left bold"
+          >
+            Email
+          </a>
+        </div>
+        <h1 class="prime">Merezhko Michael</h1>
+        <span class="gray">Kharkiv</span>
 
-      <footer class="flex box col">
-        <span class="gray">Student</span>
-        <span class="gray">Frontend developer in the future</span>
-        <span class="gray">Like video games and news about technologies</span>
-        <a href="mailto:mmieriezhko@gmail.com" class="gray">Email</span>
-      </footer>
-    </article>
+        <main class="flex box center">
+          <a href="https://github.com/Manviel" class="button bold rad">
+            FOLLOW
+          </a>
+        </main>
 
-    <ul class="flex content center">
-      <li class="rad"></li>
-      <li class="rad"></li>
-      <li class="rad"></li>
-      <li class="rad"></li>
-    </ul>
-  </div>
+        <section class="flex box space">
+          <div class="flex col">
+            <p class="bold" id="follow"></p>
+            <span class="hub">following</span>
+          </div>
+          <div class="flex col">
+            <p class="bold" id="repos"></p>
+            <span class="hub">repositories</span>
+          </div>
+        </section>
 
-  <script src="./js/script.js"></script>
-</body>
+        <footer class="flex box col">
+          <span class="gray">Student</span>
+          <span class="gray">Frontend developer</span>
+          <span class="gray">Like video games and news about technologies</span>
+        </footer>
+      </article>
+    </div>
 
+    <script src="./js/script.js"></script>
+  </body>
 </html>
