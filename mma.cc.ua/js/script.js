@@ -1,15 +1,12 @@
-function printUsers() {
-  let obj = JSON.parse(this.responseText);
-  let follow = obj.following;
-  let repos = obj.public_repos;
+const timeSince = () => {
+  const today = new Date();
+  const firstDay = new Date(2018, 10, 1);
 
-  document.getElementById('follow').innerHTML = follow;
-  document.getElementById('repos').innerHTML = repos;
-}
+  let diff = (today.getTime() - firstDay.getTime()) / 1000;
 
-const request = new XMLHttpRequest();
+  diff /= 60 * 60 * 24 * 7 * 4;
 
-request.onload = printUsers;
+  return `${Math.abs(Math.round(diff))} months`;
+};
 
-request.open('get', 'https://api.github.com/users/Manviel', true);
-request.send();
+document.getElementById("exp").innerText = timeSince();
