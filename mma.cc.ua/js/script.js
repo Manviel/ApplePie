@@ -1,6 +1,6 @@
 const timeSince = () => {
   const today = new Date();
-  const firstDay = new Date(2018, 10, 1);
+  const firstDay = new Date(2018, 9, 1);
 
   let diff = (today.getTime() - firstDay.getTime()) / 1000;
 
