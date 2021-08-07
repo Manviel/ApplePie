@@ -105,28 +105,30 @@ a {
   height: 10rem;
 }
 
-.github {
-  background-color: #38d996;
-}
-
-.linked {
-  background-color: #4fadff;
-}
-
-.inst {
-  background-color: #ff6382;
-}
-
-.email {
-  background-color: #d36ec6;
-}
-
 .btn {
   display: block;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   font-size: 1.7rem;
   padding: 1.6rem 2.4rem;
+  transition: filter 0.4s,
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.github {
+  background-color: #dcf5e9;
+}
+
+.linked {
+  background-color: #dcedf5;
+}
+
+.inst {
+  background-color: #fce8ec;
+}
+
+.email {
+  background-color: #f2e8e1;
 }
 
 .btn:not(:last-child) {
@@ -134,8 +136,11 @@ a {
 }
 
 .btn:hover {
-  transition: 0.5s;
   filter: contrast(0.8) brightness(1.15);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 @media screen and (max-width: 768px) {
