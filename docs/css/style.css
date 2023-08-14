@@ -5,6 +5,8 @@
   --c-glass: rgba(0, 122, 255, 0.15);
   --c-ring: #0066cc;
   --c-black: #111;
+  --c-white: #fff;
+  --c-dark: #000;
 }
 
 * {
@@ -119,7 +121,7 @@ a:hover {
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--c-white);
   padding: 3.2rem;
   margin-top: 3.2rem;
   border-radius: 1.6rem;
@@ -138,12 +140,11 @@ a:hover {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 6.4rem;
-  grid-row-gap: 3.2rem;
+  gap: 3.2rem;
 }
 
 .white {
-  color: #fff;
+  color: var(--c-white);
 }
 
 .avatar {
@@ -154,7 +155,7 @@ a:hover {
 
 .btn {
   display: block;
-  color: #000;
+  color: var(--c-dark);
   font-weight: bold;
   font-size: 1.7rem;
   padding: 1.6rem 2.4rem;
@@ -188,7 +189,6 @@ a:hover {
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-row-gap: 0;
   }
 
   .container {
@@ -197,5 +197,9 @@ a:hover {
 
   .card {
     padding: 2rem;
+  }
+
+  .header {
+    font-size: 3.4rem;
   }
 }
