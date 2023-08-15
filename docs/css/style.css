@@ -123,8 +123,11 @@ a:hover {
 .card {
   background-color: var(--c-white);
   padding: 3.2rem;
-  margin-top: 3.2rem;
   border-radius: 1.6rem;
+}
+
+.screen {
+  margin-top: 3.2rem;
 }
 
 .quote {
