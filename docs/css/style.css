@@ -6,6 +6,8 @@
   --c-ring: #0066cc;
   --c-black: #111;
   --c-white: #fff;
+  --c-elevation: rgba(255, 255, 255, 0.8);
+  --c-active: rgba(0, 0, 0, 0.05);
   --c-dark: #000;
 }
 
@@ -121,9 +123,16 @@ a:hover {
 }
 
 .card {
-  background-color: var(--c-white);
   padding: 3.2rem;
   border-radius: 1.6rem;
+}
+
+.card:nth-child(odd) {
+  background-color: var(--c-white);
+}
+
+.card:nth-child(even) {
+  background-color: var(--c-elevation);
 }
 
 .screen {
@@ -163,6 +172,7 @@ a:hover {
   font-size: 1.7rem;
   padding: 1.6rem 2.4rem;
   border-radius: 1rem;
+  border: 1px solid var(--c-active);
 }
 
 .github {
