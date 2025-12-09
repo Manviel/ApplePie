@@ -4,7 +4,7 @@
 
 ### Responsive design
 
-[mma.cc.ua](http://mma.cc.ua/) - my website
+[mma.cc.ua](https://manviel.github.io/ApplePie/) - my website
 
 natours - advanced CSS and Sass
 
