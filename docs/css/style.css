@@ -201,6 +201,10 @@ dl.list {
   filter: contrast(0.8) brightness(1.15);
 }
 
+.duty li::after {
+  content: ";";
+}
+
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
