@@ -41,7 +41,8 @@ ol {
 a,
 button {
   will-change: transform;
-  transition: filter 0.25s,
+  transition:
+    filter 0.25s,
     transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1),
     outline-offset 0.2s linear;
@@ -199,10 +200,6 @@ dl.list {
 
 .btn:hover {
   filter: contrast(0.8) brightness(1.15);
-}
-
-.duty li::after {
-  content: ";";
 }
 
 @media screen and (max-width: 768px) {
